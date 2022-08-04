@@ -1,0 +1,670 @@
+Statistical profiling result from test-nobloq-v8.log, (1419 ticks, 2 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1017   71.7%          /home/leo/.nvm/versions/node/v18.7.0/bin/node
+     46    3.2%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      1    0.1%          [vdso]
+      1    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      4    0.3%    1.1%  LazyCompile: *scanLine /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:815:22
+      3    0.2%    0.8%  LazyCompile: *parseTemplateText /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:761:31
+      2    0.1%    0.6%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      2    0.1%    0.6%  RegExp: (<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>)
+      2    0.1%    0.6%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      2    0.1%    0.6%  Function: ^nextTick node:internal/process/task_queues:103:18
+      2    0.1%    0.6%  Function: ^afterWriteTick node:internal/streams/writable:485:24
+      1    0.1%    0.3%  RegExp: ^\s*([^;\s]*)(?:;|\s|$)
+      1    0.1%    0.3%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.1%    0.3%  RegExp: [ \t]*<%_
+      1    0.1%    0.3%  LazyCompile: *next /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:177:16
+      1    0.1%    0.3%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.1%    0.3%  Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1    0.1%    0.3%  Function: ^setUnrefTimeout node:internal/timers:377:25
+      1    0.1%    0.3%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.1%    0.3%  Function: ^restore /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:631:17
+      1    0.1%    0.3%  Function: ^realpathSync node:fs:2474:22
+      1    0.1%    0.3%  Function: ^readSync node:fs:704:18
+      1    0.1%    0.3%  Function: ^parseurl /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:35:19
+      1    0.1%    0.3%  Function: ^parserOnIncoming node:_http_server:914:26
+      1    0.1%    0.3%  Function: ^onResponseHeaders /home/leo/Escritorio/prueba/node_modules/compression/index.js:140:47
+      1    0.1%    0.3%  Function: ^normalize node:path:1127:12
+      1    0.1%    0.3%  Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+      1    0.1%    0.3%  Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:177:16
+      1    0.1%    0.3%  Function: ^matchKnownFields node:_http_incoming:279:26
+      1    0.1%    0.3%  Function: ^join node:path:1166:7
+      1    0.1%    0.3%  Function: ^isEmpty node:internal/fixed_queue:67:10
+      1    0.1%    0.3%  Function: ^initAsyncResource node:internal/timers:154:27
+      1    0.1%    0.3%  Function: ^hasOwn /home/leo/Escritorio/prueba/node_modules/ejs/lib/utils.js:29:23
+      1    0.1%    0.3%  Function: ^handleErrorFromBinding node:internal/fs/utils:344:32
+      1    0.1%    0.3%  Function: ^getProtohost /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:546:22
+      1    0.1%    0.3%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:432:34
+      1    0.1%    0.3%  Function: ^get node:internal/streams/readable:1155:8
+      1    0.1%    0.3%  Function: ^fresh /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:153:16
+      1    0.1%    0.3%  Function: ^endReadableNT node:internal/streams/readable:1352:23
+      1    0.1%    0.3%  Function: ^end node:_http_outgoing:912:45
+      1    0.1%    0.3%  Function: ^addListener node:events:604:58
+      1    0.1%    0.3%  Function: ^_storeHeader node:_http_outgoing:384:22
+      1    0.1%    0.3%  Function: ^Writable.uncork node:internal/streams/writable:344:37
+      1    0.1%    0.3%  Function: ^Readable.on node:internal/streams/readable:886:33
+      1    0.1%    0.3%  Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1    0.1%    0.3%  Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1    0.1%    0.3%  Function: ^Hash node:internal/crypto/hash:62:14
+      1    0.1%    0.3%  Function: ^<anonymous> node:internal/validators:85:3
+      1    0.1%    0.3%  Function: ^<anonymous> node:internal/validators:240:42
+      1    0.1%    0.3%  Function: ^<anonymous> node:internal/fs/utils:686:42
+      1    0.1%    0.3%  Function: ^<anonymous> node:internal/fs/utils:674:38
+      1    0.1%    0.3%  Function: ^<anonymous> node:buffer:354:36
+      1    0.1%    0.3%  Function: ^<anonymous> :1:20
+      1    0.1%    0.3%  Function: ^<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+
+ [C++]:
+   ticks  total  nonlib   name
+     93    6.6%   26.3%  __write@@GLIBC_2.2.5
+     89    6.3%   25.1%  __read@@GLIBC_2.2.5
+     28    2.0%    7.9%  fwrite@@GLIBC_2.2.5
+     18    1.3%    5.1%  epoll_pwait@@GLIBC_2.6
+     10    0.7%    2.8%  __open@@GLIBC_2.2.5
+      6    0.4%    1.7%  _IO_file_xsputn@@GLIBC_2.2.5
+      5    0.4%    1.4%  fstatat@@GLIBC_2.33
+      4    0.3%    1.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      4    0.3%    1.1%  __mprotect@@GLIBC_PRIVATE
+      4    0.3%    1.1%  __libc_malloc@@GLIBC_2.2.5
+      3    0.2%    0.8%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    0.2%    0.8%  pthread_cond_signal@@GLIBC_2.3.2
+      3    0.2%    0.8%  __close_nocancel@@GLIBC_PRIVATE
+      2    0.1%    0.6%  std::ostream::flush()@@GLIBCXX_3.4
+      2    0.1%    0.6%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    0.1%    0.6%  accept4@@GLIBC_2.10
+      2    0.1%    0.6%  __munmap@@GLIBC_PRIVATE
+      1    0.1%    0.3%  strtoimax@@GLIBC_2.2.5
+      1    0.1%    0.3%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      1    0.1%    0.3%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.1%    0.3%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.1%    0.3%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+      1    0.1%    0.3%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.1%    0.3%  std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+      1    0.1%    0.3%  fgets@@GLIBC_2.2.5
+      1    0.1%    0.3%  cfree@GLIBC_2.2.5
+      1    0.1%    0.3%  __sysconf@@GLIBC_2.2.5
+      1    0.1%    0.3%  __pthread_mutex_unlock@GLIBC_2.2.5
+      1    0.1%    0.3%  __mmap@@GLIBC_PRIVATE
+      1    0.1%    0.3%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      1    0.1%    0.3%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+     60    4.2%   16.9%  JavaScript
+    292   20.6%   82.5%  C++
+     66    4.7%   18.6%  GC
+   1065   75.1%          Shared libraries
+      2    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     83   40.5%    5.8%  __read@@GLIBC_2.2.5
+     55   26.8%    3.9%  __write@@GLIBC_2.2.5
+     24   11.7%    1.7%  fwrite@@GLIBC_2.2.5
+     10    4.9%    0.7%  __open@@GLIBC_2.2.5
+      6    2.9%    0.4%  _IO_file_xsputn@@GLIBC_2.2.5
+      5    2.4%    0.4%  fstatat@@GLIBC_2.33
+      3    1.5%    0.2%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    1.5%    0.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      3    1.5%    0.2%  __close_nocancel@@GLIBC_PRIVATE
+      2    1.0%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    1.0%    0.1%  __libc_malloc@@GLIBC_2.2.5
+      1    0.5%    0.1%  strtoimax@@GLIBC_2.2.5
+      1    0.5%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      1    0.5%    0.1%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.5%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.5%    0.1%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+      1    0.5%    0.1%  fgets@@GLIBC_2.2.5
+      1    0.5%    0.1%  cfree@GLIBC_2.2.5
+      1    0.5%    0.1%  __sysconf@@GLIBC_2.2.5
+      1    0.5%    0.1%  __mprotect@@GLIBC_PRIVATE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1017   71.7%  /home/leo/.nvm/versions/node/v18.7.0/bin/node
+    690   67.8%    /home/leo/.nvm/versions/node/v18.7.0/bin/node
+     82   11.9%      Function: ^compileFunction node:vm:316:25
+     78   95.1%        Function: ^wrapSafe node:internal/modules/cjs/loader:1034:18
+     77   98.7%          Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+     63   81.8%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1129:37
+     14   18.2%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    1.3%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      4    4.9%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1034:18
+      4  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      4  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+     67    9.7%      Function: ^cpus node:os:133:14
+     66   98.5%        Function: ^<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+     66  100.0%          Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+     66  100.0%            Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+      1    1.5%        LazyCompile: ~<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+      1  100.0%          Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+     43    6.2%      /home/leo/.nvm/versions/node/v18.7.0/bin/node
+     13   30.2%        LazyCompile: *scanLine /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:815:22
+      9   69.2%          LazyCompile: *<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      7   77.8%            /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      2   22.2%            LazyCompile: *compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:571:21
+      4   30.8%          Function: ^<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      4  100.0%            /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      3    7.0%        Function: ^scanLine /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:815:22
+      3  100.0%          Function: ^<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      3  100.0%            /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      3    7.0%        Function: ^format /home/leo/Escritorio/prueba/node_modules/content-type/index.js:65:17
+      3  100.0%          Function: ^setCharset /home/leo/Escritorio/prueba/node_modules/express/lib/utils.js:248:41
+      3  100.0%            Function: ^send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      3    7.0%        Function: ^expressInit /home/leo/Escritorio/prueba/node_modules/express/lib/middleware/init.js:29:30
+      3  100.0%          Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            Function: ^trim_prefix /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:293:23
+      3    7.0%        Function: ^exports.escapeRegExpChars /home/leo/Escritorio/prueba/node_modules/ejs/lib/utils.js:41:38
+      3  100.0%          Function: ^createRegex /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:560:25
+      3  100.0%            Function: ^Template /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:509:18
+      3    7.0%        Function: ^createRegex /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:560:25
+      3  100.0%          Function: ^Template /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:509:18
+      3  100.0%            Function: ^compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:381:35
+      2    4.7%        Function: ^exports.escapeXML /home/leo/Escritorio/prueba/node_modules/ejs/lib/utils.js:96:30
+      2  100.0%          Function: ^<anonymous> :1:20
+      2  100.0%            Function: ^anonymous /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:695:59
+      2    4.7%        Function: ^checkInvalidHeaderChar node:_http_common:221:32
+      2  100.0%          Function: ^<anonymous> node:_http_outgoing:577:45
+      2  100.0%            Function: ^setHeader node:_http_outgoing:601:57
+      1    2.3%        LazyCompile: ~set pathname node:internal/url:936:15
+      1  100.0%          /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%            LazyCompile: ~pathToFileURL node:internal/url:1524:23
+      1    2.3%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:474:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:542:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:542:30
+      1    2.3%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:301:21
+      1  100.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:332:26
+      1  100.0%            LazyCompile: ~trySelf node:internal/modules/cjs/loader:452:17
+      1    2.3%        LazyCompile: ~pathtoRegexp /home/leo/Escritorio/prueba/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          LazyCompile: ~Layer /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~use /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:439:25
+      1    2.3%        LazyCompile: ~header /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:777:29
+      1  100.0%          LazyCompile: ~contentType /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:619:32
+      1  100.0%            LazyCompile: ~send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      1    2.3%        LazyCompile: ~getStack /home/leo/Escritorio/prueba/node_modules/depd/index.js:381:19
+      1  100.0%          LazyCompile: ~depd /home/leo/Escritorio/prueba/node_modules/depd/index.js:103:15
+      1  100.0%            Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/body-parser/index.js:1:1
+      1    2.3%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1    2.3%        Function: ^header /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:777:29
+      1  100.0%          Function: ^send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:1033:27
+      1    2.3%        Function: ^dirname node:path:1275:10
+      1  100.0%          Function: ^lookup /home/leo/Escritorio/prueba/node_modules/express/lib/view.js:104:40
+      1  100.0%            Function: ^View /home/leo/Escritorio/prueba/node_modules/express/lib/view.js:52:14
+      1    2.3%        Function: ^ServerResponse node:_http_server:184:24
+      1  100.0%          Function: ^parserOnIncoming node:_http_server:914:26
+      1  100.0%            Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    2.3%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^createPool node:buffer:155:20
+     30    4.3%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     25   83.3%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      6   24.0%          Function: ~<anonymous> node:http:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   16.0%          Function: ~<anonymous> node:internal/child_process:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3   12.0%          Function: ~<anonymous> node:_http_client:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    8.0%          LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      2  100.0%            LazyCompile: ~get node:crypto:369:8
+      2    8.0%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    8.0%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    4.0%          LazyCompile: ~listenInCluster node:net:1470:25
+      1  100.0%            LazyCompile: ~Server.listen node:net:1513:35
+      1    4.0%          LazyCompile: ~lazyLoadStreams node:fs:2907:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3050:17
+      1    4.0%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    4.0%          Function: ~<anonymous> node:internal/cluster/round_robin_handle:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    4.0%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    4.0%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   13.3%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      4  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1    3.3%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+     29    4.2%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     29  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      4   13.8%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   13.8%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3   10.3%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:509:29
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      3   10.3%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3   10.3%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    6.9%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    6.9%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.4%          LazyCompile: ~setupFetch node:internal/bootstrap/pre_execution:181:20
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1    3.4%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:295:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1    3.4%          LazyCompile: ~get BlockList node:net:1920:16
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1    3.4%          Function: ~<anonymous> node:net:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.4%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     29    4.2%      Function: ^<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+     29  100.0%        Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+     29  100.0%          Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+     29  100.0%            Function: ^compression /home/leo/Escritorio/prueba/node_modules/compression/index.js:59:31
+     27    3.9%      Function: ^compression /home/leo/Escritorio/prueba/node_modules/compression/index.js:59:31
+     27  100.0%        Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+     27  100.0%          Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+     27  100.0%            Function: ^dispatch /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:98:45
+     27    3.9%      Function: ^compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:571:21
+     27  100.0%        Function: ^compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:381:35
+     27  100.0%          Function: ^handleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:210:21
+     27  100.0%            Function: ^tryHandleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:254:24
+     24    3.5%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     24  100.0%        Function: ^Socket._writeGeneric node:net:848:42
+     24  100.0%          Function: ^Socket._writev node:net:880:36
+     24  100.0%            Function: ^doWrite node:internal/streams/writable:401:17
+     14    2.0%      Function: ^openSync node:fs:590:18
+     14  100.0%        Function: ^readFileSync node:fs:464:22
+     13   92.9%          Function: ^fileLoader /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:292:20
+     12   92.3%            Function: ^handleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:210:21
+      1    7.7%            LazyCompile: ~handleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:210:21
+      1    7.1%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:986:33
+     11    1.6%      Function: ^writeHead node:_http_server:291:19
+     11  100.0%        Function: ^writeHead /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:28:29
+     11  100.0%          Function: ^_implicitHeader node:_http_server:286:68
+     11  100.0%            Function: ^end /home/leo/Escritorio/prueba/node_modules/compression/index.js:92:28
+      9    1.3%      Function: ^setWriteHeadHeaders /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:105:30
+      9  100.0%        Function: ^writeHead /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:28:29
+      9  100.0%          Function: ^_implicitHeader node:_http_server:286:68
+      9  100.0%            Function: ^end /home/leo/Escritorio/prueba/node_modules/compression/index.js:92:28
+      8    1.2%      Function: ^endReadableNT node:internal/streams/readable:1352:23
+      7   87.5%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1   12.5%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      7    1.0%      Function: ^Hash node:internal/crypto/hash:62:14
+      7  100.0%        Function: ^createHash node:crypto:132:20
+      7  100.0%          Function: ^entitytag /home/leo/Escritorio/prueba/node_modules/etag/index.js:39:20
+      7  100.0%            Function: ^etag /home/leo/Escritorio/prueba/node_modules/etag/index.js:70:15
+      7    1.0%      Function: ^<anonymous> :1:20
+      7  100.0%        Function: ^anonymous /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:695:59
+      7  100.0%          Function: ^tryHandleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:254:24
+      7  100.0%            Function: ^exports.renderFile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:441:31
+
+     93    6.6%  __write@@GLIBC_2.2.5
+     55   59.1%    /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      3    5.5%      /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1   33.3%        LazyCompile: ~append /home/leo/Escritorio/prueba/node_modules/vary/index.js:38:17
+      1  100.0%          LazyCompile: ~vary /home/leo/Escritorio/prueba/node_modules/vary/index.js:133:15
+      1  100.0%            LazyCompile: ~onResponseHeaders /home/leo/Escritorio/prueba/node_modules/compression/index.js:140:47
+      1   33.3%        LazyCompile: *scanLine /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:815:22
+      1  100.0%          LazyCompile: *<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      1  100.0%            /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1   33.3%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      2    3.6%      LazyCompile: ~nextTick node:internal/process/task_queues:103:18
+      1   50.0%        LazyCompile: ~resume node:internal/streams/readable:989:16
+      1  100.0%          LazyCompile: ~Readable.resume node:internal/streams/readable:975:37
+      1  100.0%            LazyCompile: ~Socket.resume node:net:691:35
+      1   50.0%        LazyCompile: ~resume /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:902:16
+      1  100.0%          LazyCompile: ~Readable.resume /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:886:38
+      1  100.0%            LazyCompile: ~Readable.on /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:804:34
+      2    3.6%      LazyCompile: ~fresh /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:153:16
+      2  100.0%        LazyCompile: ~parseurl /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:35:19
+      2  100.0%          LazyCompile: ~getPathname /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:537:21
+      2  100.0%            LazyCompile: ~next /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:177:16
+      1    1.8%      LazyCompile: ~wrapfunction /home/leo/Escritorio/prueba/node_modules/depd/index.js:413:23
+      1  100.0%        Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/express/lib/utils.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    1.8%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    1.8%      LazyCompile: ~startListeningIfSignal node:internal/process/signal:22:32
+      1  100.0%        LazyCompile: ~emit node:events:460:44
+      1  100.0%          LazyCompile: ~_addListener node:events:541:22
+      1  100.0%            LazyCompile: ~addListener node:events:604:58
+      1    1.8%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:170:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~removeListener node:events:675:28
+      1  100.0%        LazyCompile: ~Readable.removeListener node:internal/streams/readable:916:45
+      1  100.0%          LazyCompile: ~detachSocket node:_http_server:270:62
+      1  100.0%            LazyCompile: ~resOnFinish node:_http_server:856:21
+      1    1.8%      LazyCompile: ~realpathSync node:fs:2474:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    1.8%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.8%      LazyCompile: ~processImmediate node:internal/timers:426:28
+      1    1.8%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:105:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~parserOnMessageComplete node:_http_common:135:33
+      1    1.8%      LazyCompile: ~once node:events:646:44
+      1  100.0%        LazyCompile: ~TransportStream /home/leo/Escritorio/prueba/node_modules/winston-transport/index.js:18:66
+      1  100.0%          LazyCompile: ~Console /home/leo/Escritorio/prueba/node_modules/winston/lib/winston/transports/console.js:26:14
+      1  100.0%            Function: ~<anonymous> /home/leo/Escritorio/prueba/server.js:1:1
+      1    1.8%      LazyCompile: ~normalizeString node:path:66:25
+      1  100.0%        LazyCompile: ~resolve node:path:1091:10
+      1  100.0%          LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:105:28
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1    1.8%      LazyCompile: ~listenInCluster node:net:1470:25
+      1  100.0%        LazyCompile: ~Server.listen node:net:1513:35
+      1  100.0%          LazyCompile: ~listen /home/leo/Escritorio/prueba/node_modules/express/lib/application.js:633:29
+      1  100.0%            Function: ~<anonymous> /home/leo/Escritorio/prueba/server.js:1:1
+      1    1.8%      LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%        LazyCompile: ~processTimers node:internal/timers:492:25
+      1    1.8%      LazyCompile: ~isstats /home/leo/Escritorio/prueba/node_modules/etag/index.js:104:18
+      1  100.0%        Function: ^etag /home/leo/Escritorio/prueba/node_modules/etag/index.js:70:15
+      1  100.0%          Function: ^generateETag /home/leo/Escritorio/prueba/node_modules/express/lib/utils.js:273:32
+      1  100.0%            Function: ^send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      1    1.8%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%        Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    1.8%      LazyCompile: ~get ReadStream node:fs:3050:17
+      1  100.0%        /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%          Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%            Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1    1.8%      LazyCompile: ~finishMaybe node:internal/streams/writable:718:21
+      1  100.0%        Function: ^afterWrite node:internal/streams/writable:490:20
+      1  100.0%          Function: ^afterWriteTick node:internal/streams/writable:485:24
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.8%      LazyCompile: ~fastparse /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:95:20
+      1  100.0%        LazyCompile: ~parseurl /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:35:19
+      1  100.0%          LazyCompile: ~getPathname /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:537:21
+      1  100.0%            LazyCompile: ~next /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:177:16
+      1    1.8%      LazyCompile: ~entitytag /home/leo/Escritorio/prueba/node_modules/etag/index.js:39:20
+      1  100.0%        LazyCompile: ~etag /home/leo/Escritorio/prueba/node_modules/etag/index.js:70:15
+      1  100.0%          LazyCompile: ~generateETag /home/leo/Escritorio/prueba/node_modules/express/lib/utils.js:273:32
+      1  100.0%            LazyCompile: ~send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      1    1.8%      LazyCompile: ~createWriteHead /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:24:26
+      1  100.0%        LazyCompile: ~onHeaders /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:56:20
+      1  100.0%          LazyCompile: ~compression /home/leo/Escritorio/prueba/node_modules/compression/index.js:59:31
+      1  100.0%            Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+      1    1.8%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%          Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      1    1.8%      LazyCompile: ~compileFunction node:vm:316:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1034:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    1.8%      LazyCompile: ~addChunk /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:295:18
+      1  100.0%        LazyCompile: ~readableAddChunk /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:249:26
+      1  100.0%          LazyCompile: ~Readable.push /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:222:36
+      1  100.0%            LazyCompile: ~Transform.push /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_transform.js:137:37
+      1    1.8%      LazyCompile: ~_writeRaw node:_http_outgoing:354:19
+      1  100.0%        LazyCompile: ~_send node:_http_outgoing:329:49
+      1  100.0%          LazyCompile: ~end node:_http_outgoing:912:45
+      1  100.0%            LazyCompile: ~end /home/leo/Escritorio/prueba/node_modules/compression/index.js:92:28
+      1    1.8%      LazyCompile: ~_storeHeader node:_http_outgoing:384:22
+      1  100.0%        LazyCompile: ~writeHead node:_http_server:291:19
+      1  100.0%          Function: ^writeHead /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:28:29
+      1  100.0%            Function: ^_implicitHeader node:_http_server:286:68
+      1    1.8%      LazyCompile: ~_flush node:_http_outgoing:1013:51
+      1  100.0%        LazyCompile: ~assignSocket node:_http_server:261:62
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:914:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    1.8%      LazyCompile: ~Template /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:509:18
+      1  100.0%        LazyCompile: ~compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%          LazyCompile: ~handleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%            LazyCompile: ~tryHandleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:254:24
+      1    1.8%      LazyCompile: ~Socket._writeGeneric node:net:848:42
+      1  100.0%        Function: ^Socket._writev node:net:880:36
+      1  100.0%          LazyCompile: ~doWrite node:internal/streams/writable:401:17
+      1  100.0%            Function: ^clearBuffer node:internal/streams/writable:532:21
+      1    1.8%      LazyCompile: ~ServerResponse node:_http_server:184:24
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:914:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    1.8%      LazyCompile: ~Readable.on /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:804:34
+      1  100.0%        LazyCompile: ~Readable.pipe /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_readable.js:608:36
+      1  100.0%          LazyCompile: ~add /home/leo/Escritorio/prueba/node_modules/winston/lib/winston/logger.js:344:6
+      1  100.0%            LazyCompile: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/winston/lib/winston/logger.js:124:26
+      1    1.8%      LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1  100.0%        Function: ^Module.load node:internal/modules/cjs/loader:986:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1014:36
+      1    1.8%      LazyCompile: ~EventEmitter.init node:events:337:29
+      1  100.0%        LazyCompile: ~EventEmitter node:events:212:22
+      1  100.0%          LazyCompile: ~Stream node:internal/streams/legacy:10:16
+      1  100.0%            LazyCompile: ~Writable /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_writable.js:229:18
+      1    1.8%      LazyCompile: ~<anonymous> node:internal/validators:99:40
+      1  100.0%        LazyCompile: ~compileFunction node:vm:316:25
+      1  100.0%          LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1034:18
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      1    1.8%      LazyCompile: ~<anonymous> node:fs:210:10
+      1    1.8%      LazyCompile: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      1  100.0%        /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%          LazyCompile: ~generateSource /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%            LazyCompile: ~compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:571:21
+      1    1.8%      LazyCompile: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/color/node_modules/color-convert/index.js:70:31
+      1  100.0%        /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%          LazyCompile: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/color/node_modules/color-convert/index.js:61:25
+      1  100.0%            /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1    1.8%      LazyCompile: *emit node:events:460:44
+      1  100.0%        Function: ^assignSocket node:_http_server:261:62
+      1  100.0%          Function: ^parserOnIncoming node:_http_server:914:26
+      1  100.0%            Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    1.8%      Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1    1.8%      Function: ~<anonymous> node:internal/crypto/webcrypto:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      1    1.8%      Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/ipaddr.js/lib/ipaddr.js:199:26
+      1  100.0%        Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/ipaddr.js/lib/ipaddr.js:1:10
+      1  100.0%          Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/ipaddr.js/lib/ipaddr.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+      1    1.8%      Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/iconv-lite/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:986:33
+      1    1.8%      Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/body-parser/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:986:33
+      1    1.8%      Function: ^wrapfunction /home/leo/Escritorio/prueba/node_modules/depd/index.js:413:23
+      1  100.0%        Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/express/lib/request.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    1.8%      Function: ^noop node:internal/util/debuglog:47:14
+      1  100.0%        Function: ^end node:_http_outgoing:912:45
+      1  100.0%          Function: ^end /home/leo/Escritorio/prueba/node_modules/compression/index.js:92:28
+      1  100.0%            Function: ^send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      1    1.8%      Function: ^header /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:777:29
+      1  100.0%        Function: ^send /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:111:25
+      1  100.0%          Function: ^done /home/leo/Escritorio/prueba/node_modules/express/lib/response.js:1033:27
+      1  100.0%            Function: ^tryHandleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:254:24
+      1    1.8%      Function: ^<anonymous> :1:1
+      1  100.0%        /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%          LazyCompile: *compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%            Function: ^compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:381:35
+
+     89    6.3%  __read@@GLIBC_2.2.5
+     83   93.3%    LazyCompile: *cpus node:os:133:14
+     83  100.0%      Function: ^<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+     83  100.0%        Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+     83  100.0%          Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+     83  100.0%            Function: ^compression /home/leo/Escritorio/prueba/node_modules/compression/index.js:59:31
+
+     46    3.2%  /usr/lib/x86_64-linux-gnu/libc.so.6
+     17   37.0%    /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      4   23.5%      /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1   25.0%        LazyCompile: *scanLine /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:815:22
+      1  100.0%          LazyCompile: *<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      1  100.0%            /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1   25.0%        Function: ^nextPart node:fs:2463:31
+      1  100.0%          Function: ^realpathSync node:fs:2474:22
+      1  100.0%            Function: ^toRealPath node:internal/modules/cjs/loader:404:20
+      1   25.0%        Function: ^createRegex /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:560:25
+      1  100.0%          Function: ^Template /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:509:18
+      1  100.0%            Function: ^compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:381:35
+      1   25.0%        /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%          Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/color/node_modules/color-convert/conversions.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+      1    5.9%      LazyCompile: ~stringToFlags node:internal/fs/utils:561:23
+      1  100.0%        Function: ^openSync node:fs:590:18
+      1  100.0%          Function: ^readFileSync node:fs:464:22
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    5.9%      LazyCompile: ~percolateUp node:internal/priority_queue:65:14
+      1  100.0%        LazyCompile: ~insert node:internal/priority_queue:26:9
+      1  100.0%          LazyCompile: ~insert node:internal/timers:355:16
+      1  100.0%            LazyCompile: ~setUnrefTimeout node:internal/timers:377:25
+      1    5.9%      LazyCompile: ~endReadableNT node:internal/streams/readable:1352:23
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    5.9%      LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%        LazyCompile: ~logger node:internal/util/debuglog:95:18
+      1  100.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+      1    5.9%      LazyCompile: ~compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%        LazyCompile: ~handleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%          LazyCompile: ~tryHandleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            LazyCompile: ~exports.renderFile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:441:31
+      1    5.9%      LazyCompile: *normalizeString node:path:66:25
+      1  100.0%        Function: ^resolve node:path:1091:10
+      1  100.0%          Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      1  100.0%            Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+      1    5.9%      LazyCompile: *<anonymous> /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:742:32
+      1  100.0%        /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%          Function: ^generateSource /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%            Function: ^compile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:571:21
+      1    5.9%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    5.9%      Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      1  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:411:23
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1    5.9%      Function: ^setHeader node:_http_outgoing:601:57
+      1  100.0%        Function: ^vary /home/leo/Escritorio/prueba/node_modules/vary/index.js:133:15
+      1  100.0%          Function: ^onResponseHeaders /home/leo/Escritorio/prueba/node_modules/compression/index.js:140:47
+      1  100.0%            Function: ^writeHead /home/leo/Escritorio/prueba/node_modules/on-headers/index.js:28:29
+      1    5.9%      Function: ^emitCloseNT node:_http_server:903:21
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    5.9%      Function: ^compression /home/leo/Escritorio/prueba/node_modules/compression/index.js:59:31
+      1  100.0%        Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:98:45
+      1    5.9%      Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1014:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/qs/lib/parse.js:1:1
+     14   30.4%    LazyCompile: *cpus node:os:133:14
+     14  100.0%      Function: ^<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+     14  100.0%        Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+     14  100.0%          Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+     14  100.0%            Function: ^compression /home/leo/Escritorio/prueba/node_modules/compression/index.js:59:31
+
+     28    2.0%  fwrite@@GLIBC_2.2.5
+     24   85.7%    /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      2    8.3%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      2    8.3%      LazyCompile: ~realpathSync node:fs:2474:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    8.3%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:105:28
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.2%      LazyCompile: ~value node:internal/console/constructor:230:20
+      1  100.0%        LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:687:33
+      1  100.0%          LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:105:28
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1    4.2%      LazyCompile: ~tryHandleCache /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%        LazyCompile: ~exports.renderFile /home/leo/Escritorio/prueba/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%          LazyCompile: ~render /home/leo/Escritorio/prueba/node_modules/express/lib/view.js:133:40
+      1  100.0%            LazyCompile: ~tryRender /home/leo/Escritorio/prueba/node_modules/express/lib/application.js:655:19
+      1    4.2%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:170:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.2%      LazyCompile: ~setupPerfHooks node:internal/bootstrap/pre_execution:341:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.2%      LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:542:30
+      1  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:542:30
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:542:30
+      1  100.0%            LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:648:31
+      1    4.2%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:31:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.2%      LazyCompile: ~log /home/leo/Escritorio/prueba/node_modules/winston/lib/winston/transports/console.js:44:6
+      1  100.0%        LazyCompile: ~_write /home/leo/Escritorio/prueba/node_modules/winston-transport/index.js:69:51
+      1  100.0%          LazyCompile: ~doWrite /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_writable.js:404:17
+      1  100.0%            LazyCompile: ~writeOrBuffer /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_writable.js:363:23
+      1    4.2%      LazyCompile: ~fastparse /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:95:20
+      1  100.0%        LazyCompile: ~parseurl /home/leo/Escritorio/prueba/node_modules/parseurl/index.js:35:19
+      1  100.0%          LazyCompile: ~getPathname /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:537:21
+      1  100.0%            LazyCompile: ~next /home/leo/Escritorio/prueba/node_modules/express/lib/router/index.js:177:16
+      1    4.2%      LazyCompile: ~createErrorType /home/leo/Escritorio/prueba/node_modules/readable-stream/errors.js:5:25
+      1  100.0%        Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/readable-stream/errors.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1074:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1129:37
+      1    4.2%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:294:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1    4.2%      LazyCompile: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/logform/json.js:26:25
+      1  100.0%        LazyCompile: ~_transform /home/leo/Escritorio/prueba/node_modules/winston/lib/winston/logger.js:275:13
+      1  100.0%          LazyCompile: ~Transform._read /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_transform.js:171:38
+      1  100.0%            LazyCompile: ~Transform._write /home/leo/Escritorio/prueba/node_modules/readable-stream/lib/_stream_transform.js:156:39
+      1    4.2%      LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    4.2%      LazyCompile: *dirname node:path:1275:10
+      1  100.0%        Function: ^lookup /home/leo/Escritorio/prueba/node_modules/express/lib/view.js:104:40
+      1  100.0%          Function: ^View /home/leo/Escritorio/prueba/node_modules/express/lib/view.js:52:14
+      1  100.0%            Function: ^render /home/leo/Escritorio/prueba/node_modules/express/lib/application.js:548:29
+      1    4.2%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1    4.2%      Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    4.2%      Function: ^get node:internal/bootstrap/node:386:8
+      1  100.0%        Function: ^<anonymous> /home/leo/Escritorio/prueba/server.js:36:33
+      1  100.0%          Function: ^handle /home/leo/Escritorio/prueba/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^next /home/leo/Escritorio/prueba/node_modules/express/lib/router/route.js:116:16
+      1    4.2%      Function: ^alignPool node:buffer:163:19
+      1  100.0%        Function: ^fromStringFast node:buffer:418:24
+      1  100.0%          Function: ^fromString node:buffer:437:20
+      1  100.0%            Function: ^from node:buffer:301:28
+      1    4.2%      /home/leo/.nvm/versions/node/v18.7.0/bin/node
+      1  100.0%        LazyCompile: ~createStatusCodeList /home/leo/Escritorio/prueba/node_modules/statuses/index.js:82:31
+      1  100.0%          Function: ~<anonymous> /home/leo/Escritorio/prueba/node_modules/statuses/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1074:37
+
+     18    1.3%  epoll_pwait@@GLIBC_2.6
+
